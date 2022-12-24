@@ -6,7 +6,7 @@
 
 @font-face{
     font-family: 'Chronicle Display';
-    src: url(Chronicle-Display-Semibold.otf);
+    src: url(../fonts/Chronicle-Display-Semibold.otf);
     font-weight: normal;
 }
 body {
