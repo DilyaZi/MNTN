@@ -1,0 +1,203 @@
+@font-face{
+    font-family: 'Gilroy';
+    src: url(fonts/Gilroy-Semibold.woff);
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Chronicle Display';
+    src: url(fonts/Chronicle-Display-Semibold.otf);
+    font-weight: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.preview {
+    position: relative;
+    height: 100vh;
+    color:white;
+}
+
+.previewLayer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.previewImage {
+    background-image: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 100%), url(background.png);
+    background-size:cover;
+    z-index: 1;
+    
+}
+
+header {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+    padding: 67px 80px;
+    font-size: 18px;
+    font-family: 'Gilroy';
+    
+}
+
+.logoWrapper{
+    width: 108px;
+    height: 24px;
+}
+nav {
+    display: flex;
+}
+
+.navItem {
+    cursor: pointer;
+}
+
+.navItem:not(:last-child) {
+    margin-right: 40px;
+}
+
+.accountTitle {
+    padding-left: 8px;
+}
+
+.accountWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.titleWrapper{
+    z-index: 3;
+    top: 30%;
+    left: 20%;
+    max-width:950px;
+}
+
+.title{
+    display:flex;
+    align-items: center;
+}
+
+.line{
+    width: 72px;
+    height: 2px;
+    background-color: #fbd784
+}
+
+.titleText{
+    font-family: 'Gilroy';
+    font-size:18px;
+    color: #FBD784;
+    padding-left: 32px;
+    letter-spacing: 6px;
+    font-weight: 800px;
+}
+
+.titleDescription{
+    font-family: 'Chronicle Display';
+    font-size: 88px;
+    font-weight: 600;
+    line-height: 114px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
+}
+
+section:not(:last-child) {
+    margin-bottom: 200px;
+}
+
+.sectionInfo{
+    position:relative;
+    max-width:632px;
+    padding-left: 230px;
+    padding-right: 80px;
+}
+
+.sectionCount{
+    position: absolute;
+    font-size: 240px;
+    font-weight: 700;
+    color:#ffffff;
+    opacity: 0.1;
+    top: -115px;
+    left: 100px;
+    font-family: "Gilroy";
+}
+
+.sectionHeader{
+    display:flex;
+    align-items: center;
+}
+
+.sectionTitle{
+    font-family: 'Gilroy';
+    color:#fbd784;
+    font-size: 18px;
+    padding-left: 24px;
+    letter-spacing: 6px;
+}
+
+.sectionInfoTitle{
+    font-family: 'Chronicle Display';
+    font-size: 64px;
+    padding-top: 27px;
+    font-weight: 600;
+    width:555px
+}
+
+main{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    background-color: #0B1D26;
+    color: #fff;
+    padding: 150px 250px;
+}
+
+.sectionText{
+    font-family: 'Gilroy';
+    font-size: 18px;
+    padding-top: 27px;
+    color:white;
+
+}
+
+.sectionImage1{
+    padding-right: 80px;
+    left: 61.29%;
+    max-width: 566px;
+    max-height: 720px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.sectionImage2{
+    padding-left: 10%;
+    padding-right: 61.29%;
+    max-width: 566px;
+    max-height: 720px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+footer{
+    display:flex;
+    justify-content: space-around;
+    background-color: #0B1D26;
+}
